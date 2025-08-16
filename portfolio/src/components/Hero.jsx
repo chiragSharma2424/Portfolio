@@ -13,11 +13,11 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <h1 className="text-white font-medium text-7xl text-center">
+          <h1 className="text-white font-medium text-7xl">
             I'm Chirag.
           </h1>
 
-          <p className="text-white mt-6 text-center text-md">
+          <p className="text-white mt-6 text-md">
             A passionate Full-Stack Developer (with a strong interest in backend development)
             who enjoys building scalable and production-ready web applications. Dedicated to
             mastering modern technologies and continuously improving through real-world projects.
@@ -41,7 +41,7 @@ export default function Hero() {
                 Resume
               </span>
             </div>
-          </div>
+          </div> 
 
           <div className="flex justify-center mt-14 text-white text-4xl animate-bounce">
             <IoIosArrowDown />
