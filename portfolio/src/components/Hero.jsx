@@ -5,28 +5,22 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section
-      id="home"
-      className="flex items-center justify-center min-h-screen pt-26"
-    >
+    <section id="home" className="flex items-center justify-center min-h-screen pt-26">
+
       <div className="flex flex-col justify-center max-w-[700px]">
-        <motion.div
-          initial={{ opacity: 0, y: 60 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-        >
-          {/* Heading */}
+        <motion.div initial={{ opacity: 0, y: 60 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: "easeOut" }}>
+        
           <h1 className="text-5xl sm:text-7xl font-bold text-white text-left">
             I'm <span className="text-blue-400">Chirag.</span>
           </h1>
 
-          {/* Sub-heading */}
+       
           <p className="text-white mt-6 text-xl leading-relaxed text-left">
-            I am a passionate Full-Stack Developer <br />
-            who loves building scalable and production-ready applications.
+            I am a Constant Learner <br />
+            and Growing Developer
           </p>
 
-          {/* Icons */}
+        
           <div className="flex justify-center gap-8 text-white text-3xl mt-12">
             <div className="relative group flex flex-col items-center">
               <a href="mailto:sharmachirag242004@gmail.com">

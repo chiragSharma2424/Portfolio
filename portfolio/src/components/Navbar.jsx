@@ -7,68 +7,54 @@ function Navbar() {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="fixed top-0 left-0 w-full z-[999] backdrop-blur-md bg-[#0f0f0f]/80 py-4 mt-5"
+      className="fixed top-0 left-0 w-full z-[999] backdrop-blur-md bg-[#0f0f0f]/80 py-4 mt-5 gap-2"
     >
-      <div className="flex justify-center items-center gap-14">
+      {/* parent container must be relative so we can place text left */}
+      <div className="relative flex justify-center items-center gap-14">
 
-        {/* Home */}
-        <div className="relative group flex flex-col items-center">
-          <a href="#home">
-            <Home className="size-8 text-white group-hover:scale-110 transition" />
-          </a>
-          <span className="absolute top-10 text-xs bg-[#0f0f0f] text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
-            Home
-          </span>
+        {/* Left Text */}
+        <div className="absolute left-6 text-white font-bold text-4xl">
+          My Portfolio
         </div>
 
-        {/* Projects */}
-        <div className="relative group flex flex-col items-center">
-          <a href="#projects">
-            <FolderKanban className="size-8 text-white group-hover:scale-110 transition" />
-          </a>
-          <span className="absolute top-10 text-xs bg-[#0f0f0f] text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
-            Projects
-          </span>
-        </div>
+        {/* Icons (center) */}
+        <div className="flex justify-center items-center gap-14">
+          <div className="relative group flex flex-col items-center">
+            <a href="#home">
+              <Home className="size-8 text-white group-hover:scale-110 transition" />
+            </a>
+            <span className="absolute top-10 text-xs bg-[#0f0f0f] text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">Home</span>
+          </div>
 
-        {/* Contact */}
-        <div className="relative group flex flex-col items-center">
-          <a href="#contact">
-            <Mail className="size-8 text-white group-hover:scale-110 transition" />
-          </a>
-          <span className="absolute top-10 text-xs bg-[#0f0f0f] text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
-            Contact
-          </span>
-        </div>
+          <div className="relative group flex flex-col items-center">
+            <a href="#projects">
+              <FolderKanban className="size-8 text-white group-hover:scale-110 transition" />
+            </a>
+            <span className="absolute top-10 text-xs bg-[#0f0f0f] text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">Projects</span>
+          </div>
 
-        {/* LinkedIn */}
-        <div className="relative group flex flex-col items-center">
-          <a
-            href="https://www.linkedin.com/in/chirag-sharma-608303309/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Linkedin className="size-8 text-white group-hover:scale-110 transition" />
-          </a>
-          <span className="absolute top-10 text-xs bg-[#0f0f0f] text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
-            LinkedIn
-          </span>
-        </div>
+          <div className="relative group flex flex-col items-center">
+            <a href="#contact">
+              <Mail className="size-8 text-white group-hover:scale-110 transition" />
+            </a>
+            <span className="absolute top-10 text-xs bg-[#0f0f0f] text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">Contact</span>
+          </div>
 
-        {/* GitHub */}
-        <div className="relative group flex flex-col items-center">
-          <a
-            href="https://github.com/chiragSharma2424"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Github className="size-8 text-white group-hover:scale-110 transition" />
-          </a>
-          <span className="absolute top-10 text-xs bg-[#0f0f0f] text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
-            GitHub
-          </span>
-        </div>
+          <div className="relative group flex flex-col items-center">
+            <a href="https://www.linkedin.com/in/chirag-sharma-608303309/" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="size-8 text-white group-hover:scale-110 transition" />
+            </a>
+            <span className="absolute top-10 text-xs bg-[#0f0f0f] text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">LinkedIn</span>
+          </div>
 
+          <div className="relative group flex flex-col items-center">
+            <a href="https://github.com/chiragSharma2424" target="_blank" rel="noopener noreferrer">
+              <Github className="size-8 text-white group-hover:scale-110 transition" />
+            </a>
+            <span className="absolute top-10 text-xs bg-[#0f0f0f] text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">GitHub</span>
+          </div>
+
+        </div>
       </div>
     </motion.nav>
   );
