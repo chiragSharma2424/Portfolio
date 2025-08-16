@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 
 export default function ProjectSection() {
   return (
-    <div className="flex flex-col items-center mt-32">
-      <h2 className="text-white text-5xl font-semibold">My Projects</h2>
+    <section
+      id="projects"
+      className="flex flex-col items-center w-full bg-transparent pt-32"
+    >
+      <h2 className="text-5xl font-semibold text-white">My Projects</h2>
 
       {/* Project 1 */}
       <motion.div
@@ -12,13 +15,12 @@ export default function ProjectSection() {
         viewport={{ once: true }}
         transition={{ duration: 0.4, ease: "easeOut" }}
         whileHover={{ scale: 1.02 }}
-        className="w-[90%] max-w-[1400px] bg-[#0f192c] border border-white/70 text-white rounded-xl p-8 mt-16 cursor-pointer"
+        className="w-[90%] max-w-[1400px] bg-[#0f192c] border border-white/70 text-white rounded-xl p-8 mt-16 shadow-md cursor-pointer"
       >
         <h3 className="text-4xl font-semibold mb-4">Todo Application</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nemo voluptates voluptatibus minus atque
-          odio earum fuga perferendis voluptas blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Maiores dignissimos quasi accusantium corrupti velit totam laborum rem placeat possimus! Optio!
+          odio earum fuga perferendis voluptas blanditiis.
         </p>
       </motion.div>
 
@@ -29,7 +31,7 @@ export default function ProjectSection() {
         viewport={{ once: true }}
         transition={{ duration: 0.4, ease: "easeOut" }}
         whileHover={{ scale: 1.02 }}
-        className="w-[90%] max-w-[1400px] bg-[#0f192c] border border-white/70 text-white rounded-xl p-8 mt-12 cursor-pointer"
+        className="w-[90%] max-w-[1400px] bg-[#0f192c] border border-white/70 text-white rounded-xl p-8 mt-12 shadow-md cursor-pointer"
       >
         <h3 className="text-4xl font-semibold mb-4">Project No 2</h3>
         <p>
@@ -38,6 +40,6 @@ export default function ProjectSection() {
           fuga expedita explicabo tenetur totam ratione soluta! Saepe eius qui quibusdam?
         </p>
       </motion.div>
-    </div>
+    </section>
   );
 }

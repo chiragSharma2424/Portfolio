@@ -3,9 +3,10 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
 import { motion } from "framer-motion";
 
+
 export default function Hero() {
   return (
-    <div className="flex justify-center mt-55">
+    <section id="home" className="flex justify-center mt-55">
       <div className="flex flex-col justify-center max-w-[700px]">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
@@ -33,7 +34,7 @@ export default function Hero() {
             </div>
 
             <div className="relative group flex flex-col items-center">
-              <a href="/resume.pdf" download>
+              <a href="/Resume.pdf" download>
                 <MdOutlineFileDownload className="size-8 group-hover:scale-110 transition" />
               </a>
               <span className="absolute -top-7 text-xs bg-[#0f0f0f] text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
@@ -47,6 +48,6 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
