@@ -1,10 +1,12 @@
-export default function Intro() {
-  return (
-    <section className="w-full flex ml-60">
-      <div className="max-w-[800px] px-4">
-        <h2 className="text-4xl font-semibold text-white mb-4">Introduction</h2>
+import React from "react";
 
-        <p className="text-white text-lg leading-relaxed">
+function Intro() {
+  return (
+    <section className="w-full flex ml-60 ">
+      <div className="max-w-[800px] px-4">
+        <h2 className="text-6xl font-semibold text-white mb-4">Introduction</h2>
+
+        <p className="text-white text-xl leading-relaxed">
           <span className="font-semibold">Overview.</span><br />
           Hi Everyone, I am Chirag Sharma from India. I am currently pursuing B.Tech in Computer
           Science and Engineering. I'm a Full-Stack developer with experience in JavaScript, Node.js,
@@ -17,3 +19,4 @@ export default function Intro() {
     </section>
   );
 }
+export default Intro;
