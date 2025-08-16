@@ -4,13 +4,11 @@ export default function ProjectSection() {
   return (
     <section
       id="projects"
-      className="w-full pt-32 flex flex-col items-center"
+      className="w-full pt-10 flex flex-col items-center mb-10"
     >
       <h2 className="text-5xl font-semibold text-white mb-12">My Projects</h2>
 
-      {/* Grid of project cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-[90%] max-w-[1400px]">
-
         {/* Project 1 - Todo App (MERN) */}
         <motion.div
           initial={{ opacity: 0, y: 60 }}
@@ -29,9 +27,9 @@ export default function ProjectSection() {
               Todo Application (MERN)
             </h3>
             <p className="text-sm">
-              A full-stack Todo application built using the MERN stack. It allows
-              users to add, edit and delete their daily tasks with a clean UI
-              and secure REST API backend.
+              A full-stack Todo application built using the MERN stack. It
+              allows users to add, edit and delete their daily tasks with a
+              clean UI and secure REST API backend.
               <br />
               <span className="font-semibold">
                 Live:&nbsp;
@@ -71,8 +69,7 @@ export default function ProjectSection() {
             <h3 className="text-xl font-semibold mb-2">Weather App</h3>
             <p className="text-sm">
               Lightweight weather application that uses the OpenWeather API to
-              fetch real-time forecasts for any location. Styled with HTML & CSS
-              and powered by vanilla JavaScript.
+              fetch real-time forecasts for any location.
             </p>
             <div className="mt-4 text-xs flex gap-2">
               <span>#HTML</span>
@@ -99,8 +96,7 @@ export default function ProjectSection() {
             <h3 className="text-xl font-semibold mb-2">Registration Form</h3>
             <p className="text-sm">
               A responsive registration page designed using HTML, CSS and
-              JavaScript with input validations and clean UX. Ideal for users to
-              sign up and authenticate securely.
+              JavaScript with input validations and clean UX.
             </p>
             <div className="mt-4 text-xs flex gap-2">
               <span>#HTML</span>
@@ -109,7 +105,6 @@ export default function ProjectSection() {
             </div>
           </div>
         </motion.div>
-
       </div>
     </section>
   );

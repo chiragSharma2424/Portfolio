@@ -7,7 +7,7 @@ function Navbar() {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="fixed top-0 left-0 w-full z-[999] backdrop-blur-md bg-[#0f0f0f]/80 py-4"
+      className="fixed top-0 left-0 w-full z-[999] backdrop-blur-md bg-[#0f0f0f]/80 py-4 mt-5"
     >
       <div className="flex justify-center items-center gap-14">
 
