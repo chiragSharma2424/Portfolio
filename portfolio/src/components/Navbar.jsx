@@ -7,17 +7,15 @@ function Navbar() {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="fixed top-0 left-0 w-full z-[999] backdrop-blur-md bg-[#0f0f0f]/80 py-4 mt-5 gap-2"
-    >
-      {/* parent container must be relative so we can place text left */}
+      className="fixed top-0 left-0 w-full z-[999] backdrop-blur-md bg-[#0f0f0f]/80 py-4 mt-2 gap-2">
+     
       <div className="relative flex justify-center items-center gap-14">
 
-        {/* Left Text */}
+       
         <div className="absolute left-6 text-white font-bold text-4xl">
           My Portfolio
         </div>
 
-        {/* Icons (center) */}
         <div className="flex justify-center items-center gap-14">
           <div className="relative group flex flex-col items-center">
             <a href="#home">

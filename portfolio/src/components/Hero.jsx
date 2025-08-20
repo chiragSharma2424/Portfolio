@@ -11,7 +11,7 @@ export default function Hero() {
         <motion.div initial={{ opacity: 0, y: 60 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: "easeOut" }}>
         
           <h1 className="text-5xl sm:text-7xl font-bold text-white text-left">
-            I'm <span className="text-blue-400">Chirag.</span>
+            Hi I'm <span className="text-blue-400">Chirag.</span>
           </h1>
 
        
