@@ -67,6 +67,7 @@ function Skills() {
             <span className="tag">Ec2 Instance</span>
             <span className="tag">Linux</span>
             <span className="tag">CI/CD basics</span>
+            <span className="tag">Bash Scripting</span>
           </div>
         </div>
 
