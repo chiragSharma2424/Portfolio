@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 function Contact() {
   return (
-    <footer className="w-full bg-[#050B16] py-10" id="contact">
+    <footer className="w-full py-10" id="contact">
       <div className="max-w-[1200px] mx-auto flex flex-col sm:flex-row justify-between items-center gap-6 px-6">
       
         <div className="text-left">

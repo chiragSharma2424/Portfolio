@@ -1,102 +1,71 @@
-import { motion } from "framer-motion";
+import { Package, FileText } from "lucide-react";
 
 export default function ProjectSection() {
   return (
-    <section id="projects" className="w-full pt-10 flex flex-col items-center mb-10">
-      
-      <h2 className="text-5xl font-semibold text-white mb-12">My Projects</h2>
+    <section id="projects" className="w-full py-20 flex flex-col items-center">
+      <p className="text-purple-500 mb-2">My Work</p>
+      <h2 className="text-4xl font-bold text-white mb-12">Featured Projects</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-[90%] max-w-[1400px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-[90%] max-w-[1300px]">
+        {/* Project 1 – Todo App (Featured) */}
+        <div className="bg-[#0c1523] p-8 rounded-xl border border-white/10 transition hover:scale-[1.02] hover:border-purple-600/40">
+          <Package size={40} className="text-purple-500 mb-4" />
+          <h3 className="text-xl font-semibold text-white mb-3">
+            Todo Application (MERN)
+          </h3>
+          <p className="text-gray-300 mb-5">
+            A full-stack Todo application built with the MERN stack. Allows users
+            to create, update and delete tasks with real-time UI updates and clean UX.
+          </p>
 
-        <motion.div initial={{ opacity: 0, y: 60 }} whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="bg-[#0f192c] rounded-xl overflow-hidden border border-white/20">
-
-          <img src="https://images.unsplash.com/photo-1557598803-1fdb130cf54a"
-            className="w-full h-48 object-cover" alt="Todo App"/>
-
-          <div className="p-6 text-white">
-            <h3 className="text-xl font-semibold mb-2">
-              Todo Application (MERN)
-            </h3>
-            <p className="text-sm">
-              A full-stack Todo application built using the MERN stack. It
-              allows users to add, edit and delete their daily tasks with a
-              clean UI and secure REST API backend.
-              <br />
-
-              <span className="font-semibold">
-                Live:&nbsp;
-                <a href="https://todo-deploy-blue.vercel.app/"
-                  target="_blank"rel="noopener noreferrer" className="underline text-blue-400">
-                  https://todo-deploy-blue.vercel.app/
-                </a>
-              </span>
-            </p>
-            <div className="mt-4 text-xs flex gap-2">
-              <span>#MongoDB</span>
-              <span>#Express</span>
-              <span>#React</span>
-              <span>#Node</span>
-            </div>
+          <div className="flex flex-wrap gap-2 text-xs mb-6">
+            <span className="tag">MongoDB</span>
+            <span className="tag">Express.js</span>
+            <span className="tag">React.js</span>
+            <span className="tag">Node.js</span>
+            <span className="tag">Tailwind CSS</span>
           </div>
-        </motion.div>
 
-
-
-        <motion.div
-          initial={{ opacity: 0, y: 60 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="bg-[#0f192c] rounded-xl overflow-hidden border border-white/20"
-        >
-          <img src="https://images.unsplash.com/photo-1520975916090-3105956dacd0"
-            className="w-full h-48 object-cover" alt="Weather App"/>
-
-          <div className="p-6 text-white">
-            <h3 className="text-xl font-semibold mb-2">Weather App</h3>
-            <p className="text-sm">
-              Lightweight weather application that uses the OpenWeather API to
-              fetch real-time forecasts for any location.
-            </p>
-
-            <div className="mt-4 text-xs flex gap-2">
-              <span>#HTML</span>
-              <span>#CSS</span>
-              <span>#JavaScript</span>
-            </div>
+          <div className="flex gap-4">
+            <a
+              href="https://github.com/chiragSharma2424"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2 border rounded-md text-white hover:bg-white/10 transition"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://todo-deploy-blue.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2 rounded-md bg-purple-600 text-white hover:bg-purple-700 transition"
+            >
+              Live Demo
+            </a>
           </div>
-        </motion.div>
+        </div>
 
-      
+        {/* Project 2 – Coming Soon */}
+        <div className="bg-[#0c1523] p-8 rounded-xl border border-white/10 transition hover:scale-[1.02]">
+          <FileText size={40} className="text-purple-500/40 mb-4 blur-[1px]" />
+          <h3 className="text-xl font-semibold text-white mb-3">
+            More Projects Coming Soon
+          </h3>
+          <p className="text-gray-400 mb-6">
+            I'm constantly working on new projects. Check back soon or visit my
+            GitHub profile for updates.
+          </p>
 
-
-        <motion.div initial={{ opacity: 0, y: 60 }}
-          whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, ease: "easeOut" }} 
-          viewport={{ once: true }} className="bg-[#0f192c] rounded-xl overflow-hidden border border-white/20">
-
-          <img
-            src="https://images.unsplash.com/photo-1518972559570-1ecb28137d35" 
-            className="w-full h-48 object-cover" alt="Registration Form"/>
-
-          <div className="p-6 text-white">
-            <h3 className="text-xl font-semibold mb-2">Registration Form</h3>
-
-            <p className="text-sm">
-              A responsive registration page designed using HTML, CSS and
-              JavaScript with input validations and clean UX.
-            </p>
-
-            <div className="mt-4 text-xs flex gap-2">
-              <span>#HTML</span>
-              <span>#CSS</span>
-              <span>#JavaScript</span>
-            </div>
-
-          </div>
-        </motion.div>
+          <a
+            href="https://github.com/chiragSharma2424"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2 rounded-md bg-purple-600 text-white hover:bg-purple-700 transition"
+          >
+            Visit GitHub
+          </a>
+        </div>
       </div>
     </section>
   );

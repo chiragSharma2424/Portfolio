@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section id="home" className="flex items-center justify-center min-h-screen pt-26">
+    <section id="home" className="flex items-center justify-center min-h-screen pt-30">
 
       <div className="flex flex-col justify-center max-w-[700px]">
         <motion.div initial={{ opacity: 0, y: 60 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: "easeOut" }}>

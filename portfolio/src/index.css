@@ -11,3 +11,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.tag {
+  @apply bg-[#1b2838] text-gray-300 px-3 py-1 rounded-full inline-block;
+}
