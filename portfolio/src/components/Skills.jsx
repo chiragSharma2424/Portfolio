@@ -1,14 +1,14 @@
 import { Code, Server, Database, Settings, Terminal, Users } from "lucide-react";
 
-export default function TechnicalSection() {
+function Skills() {
   return (
     <section id="skills" className="w-full py-16 flex flex-col items-center">
       <p className="text-purple-500 mb-2">My Skills</p>
       <h2 className="text-4xl font-bold text-white mb-10">Technical Expertise</h2>
 
       <div className="max-w-[1300px] w-[90%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {/* Frontend */}
-        <div className="border border-white/10 p-6 rounded-xl bg-[#0c1523]">
+        
+        <div className="border border-white/10 p-6 rounded-xl bg-[#0c1523] transition transform hover:scale-105 hover:shadow-lg">
           <div className="flex items-center gap-3 mb-4">
             <Code className="text-purple-500" />
             <h3 className="text-lg font-semibold text-white">
@@ -25,8 +25,7 @@ export default function TechnicalSection() {
           </div>
         </div>
 
-        {/* Backend */}
-        <div className="border border-white/10 p-6 rounded-xl bg-[#0c1523]">
+        <div className="border border-white/10 p-6 rounded-xl bg-[#0c1523] transition transform hover:scale-105 hover:shadow-lg">
           <div className="flex items-center gap-3 mb-4">
             <Server className="text-purple-500" />
             <h3 className="text-lg font-semibold text-white">
@@ -42,8 +41,7 @@ export default function TechnicalSection() {
           </div>
         </div>
 
-        {/* DB */}
-        <div className="border border-white/10 p-6 rounded-xl bg-[#0c1523]">
+        <div className="border border-white/10 p-6 rounded-xl bg-[#0c1523] transition transform hover:scale-105 hover:shadow-lg">
           <div className="flex items-center gap-3 mb-4">
             <Database className="text-purple-500" />
             <h3 className="text-lg font-semibold text-white">
@@ -56,8 +54,7 @@ export default function TechnicalSection() {
           </div>
         </div>
 
-        {/* DevOps & Cloud */}
-        <div className="border border-white/10 p-6 rounded-xl bg-[#0c1523]">
+        <div className="border border-white/10 p-6 rounded-xl bg-[#0c1523] transition transform hover:scale-105 hover:shadow-lg">
           <div className="flex items-center gap-3 mb-4">
             <Settings className="text-purple-500" />
             <h3 className="text-lg font-semibold text-white">
@@ -73,8 +70,7 @@ export default function TechnicalSection() {
           </div>
         </div>
 
-        {/* Programming */}
-        <div className="border border-white/10 p-6 rounded-xl bg-[#0c1523]">
+        <div className="border border-white/10 p-6 rounded-xl bg-[#0c1523] transition transform hover:scale-105 hover:shadow-lg">
           <div className="flex items-center gap-3 mb-4">
             <Terminal className="text-purple-500" />
             <h3 className="text-lg font-semibold text-white">
@@ -88,20 +84,21 @@ export default function TechnicalSection() {
           </div>
         </div>
 
-        {/* Soft Skills */}
-        <div className="border border-white/10 p-6 rounded-xl bg-[#0c1523]">
+        <div className="border border-white/10 p-6 rounded-xl bg-[#0c1523] transition transform hover:scale-105 hover:shadow-lg">
           <div className="flex items-center gap-3 mb-4">
             <Users className="text-purple-500" />
             <h3 className="text-lg font-semibold text-white">Soft Skills</h3>
           </div>
           <div className="flex flex-wrap gap-2 text-sm">
             <span className="tag">Interactive</span>
-            <span className="tag">Adaptability</span>
-            <span className="tag">Teamwork</span>
-            <span className="tag">Time Management</span>
+            <span class="tag">Adaptability</span>
+            <span class="tag">Teamwork</span>
+            <span class="tag">Time Management</span>
           </div>
         </div>
       </div>
     </section>
   );
 }
+
+export default Skills;

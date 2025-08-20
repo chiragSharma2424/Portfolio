@@ -1,6 +1,6 @@
 import { ShieldCheck, Cloud, BookOpen } from "lucide-react";
 
-export default function Intro() {
+function Intro() {
   return (
     <section id="about" className="w-full py-20 flex flex-col items-center -mt-21">
       <p className="text-purple-500 mb-2">About Me</p>
@@ -17,7 +17,8 @@ export default function Intro() {
 
       <div className="w-[90%] max-w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-8">
 
-        {/* MERN Card */}
+
+
         <div className="bg-[#0c1523] border border-white/10 p-8 rounded-xl text-center">
           <ShieldCheck className="text-purple-500 mx-auto mb-4" size={30}/>
           <h3 className="text-lg font-semibold text-white mb-2">MERN Stack</h3>
@@ -26,7 +27,8 @@ export default function Intro() {
           </p>
         </div>
 
-        {/* DevOps Card */}
+     
+     
         <div className="bg-[#0c1523] border border-white/10 p-8 rounded-xl text-center">
           <Cloud className="text-purple-500 mx-auto mb-4" size={30}/>
           <h3 className="text-lg font-semibold text-white mb-2">Cloud &amp; DevOps</h3>
@@ -35,7 +37,9 @@ export default function Intro() {
           </p>
         </div>
 
-        {/* Continuous Learning Card */}
+      
+      
+
         <div className="bg-[#0c1523] border border-white/10 p-8 rounded-xl text-center">
           <BookOpen className="text-purple-500 mx-auto mb-4" size={30}/>
           <h3 className="text-lg font-semibold text-white mb-2">Continuous Learning</h3>
@@ -48,3 +52,5 @@ export default function Intro() {
     </section>
   );
 }
+
+export default Intro;
